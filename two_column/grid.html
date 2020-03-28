@@ -1,0 +1,46 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-01-05 22:13:29
+ * @LastEditTime : 2020-03-28 16:56:09
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /work/css_test/two_column/two_inline_block.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            margin: 20px;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            align-items: flex-start;
+        }
+
+        .left {
+            width: 200px;
+            background: hotpink;
+            grid-column: 1;
+        }
+
+        .right {
+            background: khaki;
+            grid-column: 2;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+
+</html>

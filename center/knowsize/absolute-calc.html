@@ -1,0 +1,45 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-03-28 14:36:28
+ * @LastEditTime : 2020-03-28 15:21:35
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /work/css-skills/center/absolute-margin.html
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <style>
+         .container {
+             border: 1px solid aqua;
+             width: 300px;
+             height: 300px;
+             position: relative;
+         }
+ 
+         .element {
+             background: yellowgreen;
+             position: absolute;
+             top: calc(50% - 50px);
+             left: calc(50% - 50px);
+         }
+ 
+         .element.size {
+             width: 100px;
+             height: 100px;
+         }
+     </style>
+ 
+ </head>
+ 
+ <body>
+     <div class="container">
+         <div class="element size">垂直居中</div>
+     </div>
+ </body>
+ 
+ </html>

@@ -1,0 +1,51 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-03-28 15:34:47
+ * @LastEditTime : 2020-03-28 16:06:28
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /work/css-skills/center/unkonwsize/inline-height.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .container {
+            border: 1px solid aqua;
+            width: 300px;
+            height: 300px;
+            position: relative;
+            writing-mode: vertical-lr;
+            text-align: center;
+        }
+
+        .container-inner {
+            writing-mode: horizontal-tb;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+        }
+
+        .element {
+            background: yellowgreen;
+            display: inline-block;
+            margin: auto;
+            text-align: left;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-inner">
+            <div class="element">垂直居中</div>
+        </div>
+    </div>
+</body>
+
+</html>
